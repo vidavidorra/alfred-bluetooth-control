@@ -15,13 +15,13 @@ commands = [
         'autocomplete': 'Bluetooth Off'
     },
     {
-        'title': 'Restart',
-        'arg': 'restart',
+        'title': 'Toggle',
+        'arg': 'toggle',
         'command_list': ['toggle', 'change', 'switch'],
         'autocomplete': 'Bluetooth Toggle'
     },
     {
-        'title': 'restart',
+        'title': 'Restart',
         'arg': 'restart',
         'command_list': ['reset', 'restart'],
         'autocomplete': 'Bluetooth Restart'
