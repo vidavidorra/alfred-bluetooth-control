@@ -6,7 +6,9 @@ Alfred Workflow to control Bluetooth. It can turn on, turn off, toggle and resta
 
 ## How to use
 
-Intstall the workflow and type the `bt` keyword on Alfred followed by one of the commands, e.g. `bt restart`.
+Intstall the workflow and type the `bt` keyword on Alfred followed by one of the commands, e.g. `bt restart`. The workflow will suggest the available actions based on the command and alias(es). A table of the available commands and alias(es) can be found below.
+
+![](screenshot.png)
 
 
 
