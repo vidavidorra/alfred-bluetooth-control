@@ -5,13 +5,13 @@ commands = [
     {
         'title': 'On',
         'arg': 'on',
-        'command_list': ['on', 'up', 'activate'],
+        'command_list': ['on', 'activate'],
         'autocomplete': 'Bluetooth On'
     },
     {
         'title': 'Off',
         'arg': 'off',
-        'command_list': ['off', 'down', 'deactivate'],
+        'command_list': ['off', 'deactivate'],
         'autocomplete': 'Bluetooth Off'
     },
     {
@@ -25,6 +25,18 @@ commands = [
         'arg': 'restart',
         'command_list': ['reset', 'restart'],
         'autocomplete': 'Bluetooth Restart'
+    },
+    {
+        'title': 'Discoverable',
+        'arg': 'discoverable',
+        'command_list': ['discoverable', 'don', 'ond'],
+        'autocomplete': 'Discoverable'
+    },
+    {
+        'title': 'Undiscoverable',
+        'arg': 'undiscoverable',
+        'command_list': ['undiscoverable', 'doff', 'offd'],
+        'autocomplete': 'Undiscoverable'
     }
 ]
 
@@ -54,7 +66,6 @@ def suggest_command(query):
 
     for command in commands:
         if any(item.startswith(query) for item in command['command_list']):
-            # print(command['arg'])
             item = {
               'title': command['title'],
               'autocomplete': command['autocomplete'],

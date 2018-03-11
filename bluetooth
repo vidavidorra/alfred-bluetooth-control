@@ -1,0 +1,31 @@
+query="${1}"
+
+case $query in
+    # Power
+    "on")
+        ./blueutil_executable -p 1
+    ;;
+    "off")
+        ./blueutil_executable -p 0
+    ;;
+    "toggle")
+        status="$(./blueutil_executable -p)"
+        if [ "${status}" == "1" ]; then
+            ./blueutil_executable -p 0
+        elif [ "${status}" == "0" ]; then
+            ./blueutil_executable -p 1
+        fi
+    ;;
+    "restart")
+        ./blueutil_executable -p 0
+        sleep 1
+        ./blueutil_executable -p 1
+    ;;
+    # Discoverability
+    "discoverable")
+        ./blueutil_executable -d 1
+    ;;
+    "undiscoverable")
+        ./blueutil_executable -d 0
+    ;;
+esac
