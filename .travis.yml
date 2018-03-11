@@ -1,0 +1,12 @@
+sudo: enabled
+
+os: osx
+osx_image: xcode9.2
+
+script:
+  - ls -la
+  - ls -la /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+  - nm -oj /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth | egrep 'IOBluetoothPreference(sAvailable|((Get|Set)(ControllerPower|Discoverable)State))'
+  - cd blueutil
+  - make
+  - ./blueutil
