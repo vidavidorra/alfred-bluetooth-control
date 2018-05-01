@@ -1,0 +1,3 @@
+[submodule "blueutil"]
+	path = submodules/blueutil
+	url = https://github.com/toy/blueutil.git
