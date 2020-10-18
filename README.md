@@ -2,7 +2,13 @@
 
 Alfred Workflow to control Bluetooth. It can turn on, turn off, toggle and restart the Bluetooth radio and make Bluetooth discoverable and undiscoverable for other devices.
 
+---
 
+# ⚠ This project is no longer maintained here
+
+This project is no longer maintained here. There are similar projects to this one, and I recommend using [tilmanginzel/alfred-bluetooth-workflow](https://github.com/tilmanginzel/alfred-bluetooth-workflow) as replacement.
+
+---
 
 ## How to use
 
